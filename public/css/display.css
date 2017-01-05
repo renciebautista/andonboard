@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #2f3135;
+    background: url(../images/binding_dark.png) repeat;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.left-logo{
+	height: 120px;
+}
+.right-logo{
+	/*background-color: #FFFFFF;*/
+	height: 160px;
+}
+
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 180px;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+h4 {
+	font-size: 100px;
+}
+
+#date-part{
+	font-size:  2.4em;
+}
+
+#time-part{
+	font-size:  4.5em;
+}
