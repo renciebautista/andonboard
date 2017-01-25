@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Line;
+use App\Shift;
 
 class DashboardController extends Controller
 {
@@ -17,6 +18,7 @@ class DashboardController extends Controller
     public function show($slug)
     {
     	$line = Line::where('slug', $slug)->first();
-    	return view('dashboard.show', compact('line'));
+    	$shifts = Shift::all();
+    	return view('dashboard.show', compact('line', 'shifts'));
     }
 }

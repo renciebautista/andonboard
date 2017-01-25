@@ -20,4 +20,7 @@ Route::get('display/{slug}', ['as' => 'display.show', 'uses' => 'DisplayControll
 
 Route::resource('lines', 'LineController');
 
+Route::resource('shifts', 'ShiftController');
+
+
 

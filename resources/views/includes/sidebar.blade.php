@@ -11,7 +11,10 @@
                     <li><a href="{{ route('dashboard.show', ['slug' => $line->slug ])}}"> <i class="fa fa-cube"></i> {{ $line->line_name }}</a></li>
                     @endforeach
                     <li>
-                        <a href="{{ route('lines.index')}}"><i class="fa fa-cubes"></i> Lines</a>
+                        <a href="{{ route('lines.index')}}"><i class="fa fa-cubes"></i> Line Maintenance</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('shifts.index')}}"><i class="fa fa-list-alt"></i> Shift Maintenance</a>
                     </li>
                 </ul>
             </div>

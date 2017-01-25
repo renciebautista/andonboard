@@ -45,12 +45,12 @@
                 @yield('main_container')
 
                 <!-- footer content -->
-                <!-- <footer>
+                <footer>
                     <div class="pull-right">
                         Gentelella - Bootstrap Admin Template by <a ="https://colorlib.com">Colorlib</a>
                     </div>
                     <div class="clearfix"></div>
-                </footer> -->
+                </footer>
                 <!-- /footer content -->
 
             </div>
@@ -58,7 +58,9 @@
 
         <!-- jQuery -->
         <script src="{{ asset("js/jquery.min.js") }}"></script>
+
         <!-- Bootstrap -->
+        <script src="{{ asset("vendors/bootstrap/dist/js/bootstrap.min.js") }}"></script>
   
         <!-- Amcharts -->
         <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -68,9 +70,14 @@
         <script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
 
 
+        <!-- jquery.inputmask -->
+        <script src="{{ asset("vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js") }} "></script>
+
+
         <!-- Custom Theme Scripts -->
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
-        <script src="{{ asset("js/custom.js") }}"></script>
+        
+
         <script>
           var hostname = 'http://' + $(location).attr('host');
           function getSelectedValues(select) {
@@ -82,12 +89,12 @@
           }
 
           $(document).ready(function() {
-
+            @stack('inline-scripts')
           });
 
     
 
-          @stack('inline-scripts')
+          
         </script>
 
         @stack('scripts')
