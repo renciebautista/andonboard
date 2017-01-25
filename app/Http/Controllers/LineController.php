@@ -25,11 +25,13 @@ class LineController extends Controller
     {
     	$this->validate($request, [
             'line_name' => 'required|max:100|unique:lines',
+            'node' => 'required',
         ]);
 
         $line = new Line;
         $line->line_name = strtoupper($request->line_name);
         $line->slug = strtolower(str_replace(' ', '', $request->line_name));
+        $line->node = $request->node;
         $line->save();
 
         Session::flash('flash_message', 'Line successfully added!');
