@@ -33,3 +33,17 @@
     margin: 3px 0 7px;
     font-weight: bold;
 }
+
+.location_image{
+    margin-top: 10px;
+    margin-left: 10px;
+    height:85px;
+    background-repeat: no-repeat;
+    background-size:100%;
+    image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+
+

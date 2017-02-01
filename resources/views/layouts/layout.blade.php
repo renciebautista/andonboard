@@ -34,7 +34,7 @@
 
     </head>
 
-    <body class="nav-sm">
+    <body class="nav-md">
         <div class="container body">
             <div class="main_container">
 
@@ -76,6 +76,18 @@
 
         <!-- Custom Theme Scripts -->
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
+         <!-- Moment -->
+        <script src="{{ asset("js/moment.js") }}"></script>
+         <script src="{{ asset("vendors/justgage-1.2.2/raphael-2.1.4.min.js") }}"></script>
+        <script src="{{ asset("vendors/justgage-1.2.2/justgage.js") }}"></script>
+
+        <style type="text/css">
+        #g1 {
+
+                width: 350px;
+                height: 340px;
+            }
+        </style>
         
 
         <script>
