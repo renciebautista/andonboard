@@ -595,7 +595,8 @@
                 { value: 0 },
                 { value: 500 },
                 { value: 1000,
-                   bottomLabel: "TARGET"
+                   bottomLabel: "TARGET",
+                   color: "#FF0000"
                  },
                 { value: 1500 },
                 { value: 2000 },
@@ -610,7 +611,8 @@
                 { value: 0 },
                 { value: 500 },
                 { value: 1000,
-                   bottomLabel: "TARGET"
+                   bottomLabel: "TARGET",
+                   color: "#FF0000"
                  },
                 { value: 1500 },
                 { value: 2000 },
@@ -644,8 +646,7 @@
                   bottomLabel: "TARGET",
                   color: "#FF0000"
                  },
-                { value: 1000,
-                   bottomLabel: "TARGET"
+                { value: 1000
                  },
                 { value: 1500 },
                 { value: 2000 },
@@ -660,7 +661,8 @@
                 { value: 0 },
                 { value: 500 },
                 { value: 1000,
-                   bottomLabel: "TARGET"
+                   bottomLabel: "TARGET",
+                   color: "#FF0000"
                  },
                 { value: 1500 },
                 { value: 2000 },
@@ -675,7 +677,8 @@
                 { value: 0 },
                 { value: 500 },
                 { value: 1000,
-                   bottomLabel: "TARGET"
+                   bottomLabel: "TARGET",
+                   color: "#FF0000"
                  },
                 { value: 1500 },
                 { value: 2000 },
@@ -685,15 +688,15 @@
             });
 
     
-
+          var cnt = 1;
           setTimeout(function() {
            setInterval(function() {
-             shift.increment();
+             clock.increment();
+              cnt++
+             $('#myGoal1').stepProgressBar('setCurrentValue',cnt *10);
            }, 1000);
           });
-              var shift = $('.counter_shift').FlipClock(1000, {
-                    clockFace: 'Counter'
-                });
+              
 
               var clock = $('.counter').FlipClock(1000, {
                     clockFace: 'Counter'
