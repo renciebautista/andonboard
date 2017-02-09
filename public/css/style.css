@@ -1,3 +1,12 @@
+body {
+    /*margin: 0;*/
+    background-color: #2f3135;
+    background: url(../images/binding_dark.png) repeat;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin: 10px;
+}
+
 .full_button .dropdown-menu {
     width: 100%;
     min-height: 1px;
@@ -44,6 +53,80 @@
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
+
+
+.main_container {
+    margin: 20px;
+    color: #FFF;
+}
+
+.line_header{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 1px;
+/*    border-bottom: 2px solid #E6E9ED;
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;*/
+}
+.center {
+    text-align: center;
+}
+.line_image img{
+    width: 150px;
+    margin: 10px;
+}
+
+.center-block { 
+ width: 400px;
+ display: block;
+ margin: 0 auto;
+}
+hr{
+     border-top: 2px solid rgba(115,135,156,0.36);
+}
+.b-right{
+    border-right: 2px solid rgba(115,135,156,0.36);
+    /*border-right: 2px solid #FFF;*/
+}
+.x_panel{
+    color: #000;
+    font-weight: bold;
+}
+.left-logo{
+    height: 100px;
+}
+.right-logo{
+    /*background-color: #FFFFFF;*/
+    height: 160px;
+    margin-top: -25px;
+    margin-bottom: -70px;
+}
+#date-part{
+    font-size:  2.0em;
+}
+
+#time-part{
+    font-size:  5em;
+}
+
+#plant_name{
+    font-size:  5em;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: -1;
+}
+h2  {
+    font-size: 30px;
+}
+hr {
+     margin-top: 1px; 
+     margin-bottom: 1px; 
+    /*border: 0;*/
+    /*border-top: 1px solid #eee;*/
+}
+
 
 
 
