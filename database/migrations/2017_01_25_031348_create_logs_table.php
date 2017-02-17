@@ -19,7 +19,7 @@ class CreateLogsTable extends Migration
             $table->integer('shift_id')->unsigned();
             $table->foreign('shift_id')->references('id')->on('shifts');
             $table->integer('target');
-            $table->integer('actual');
+            $table->integer('actual')->nullable();
             $table->date('run_date');
             $table->timestamps();
         });

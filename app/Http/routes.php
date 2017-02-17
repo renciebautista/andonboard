@@ -22,5 +22,12 @@ Route::resource('lines', 'LineController');
 
 Route::resource('shifts', 'ShiftController');
 
+Route::resource('schedules', 'ScheduleController');
 
 
+Route::group(array('prefix' => 'api'), function()
+{
+   	Route::get('line/{slug}', 'Api\LogController@getcurrentlog');
+   	Route::get('lineshift/{slug}', 'Api\LogController@getcurrentlineshift');
+
+});

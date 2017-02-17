@@ -174,6 +174,17 @@
             }
         },
 
+        removeTarget: function(){
+            for(var i = 0; i < this.settings.steps.length; i++) {
+                if(this.settings.steps[i].bottomLabel == "TARGET") {
+                    this._deleteStep(this.settings.steps[i], i);
+                    return;
+                }
+            }
+            // refresh steps
+            this._updateSteps();
+        },
+
         // To call a call a pseudo private method: 
         //this._pseudoPrivateMethod();
 
